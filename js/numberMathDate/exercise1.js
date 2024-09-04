@@ -28,7 +28,7 @@ fn2 = () => {
 fn3 = () => {
   date = new Date();
   date.setFullYear(date.getFullYear() + 1);
-  const day = { 0: "토", 1: "일", 2: "월", 3: "화", 4: "수", 5: "목", 6: "금" };
+  const day = "일월화수목금토";
   console.log(`${day[date.getDay()]}요일`);
 };
 
