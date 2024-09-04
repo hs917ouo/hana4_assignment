@@ -14,8 +14,7 @@ fn1 = () => {
 
 fn2 = () => {
   date = new Date();
-  tmp_date = new Date(date.getFullYear(), date.getMonth(), 0);
-  console.log(tmp_date.getDate());
+  tmp_date = new Date(date.getFullYear(), date.getMonth() + 1, 0);
   day = () => 1 + Math.round((tmp_date.getDate() - 1) * Math.random());
   let arr = [];
   for (i = 0; i < 5; i++) {
