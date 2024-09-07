@@ -4,5 +4,7 @@
 const arr = [1, 2];
 
 //<이 부분을 작성하시오>;
+[arr[1],arr[0]]=[arr[0],arr[1]];
+
 console.log(arr);
 // 출력결과: [2, 1]
