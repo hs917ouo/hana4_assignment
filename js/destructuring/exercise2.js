@@ -4,7 +4,24 @@
 // 2.    function f2({id, name}) { console.log(id, name); }
 // 3.    const f3 = ({id, name}) => { console.log(id, name); }
 
-// const hong = {id: 1, name: 'Hong'};
-// const lee = {id: 2, name: 'Lee'};
+const hong = { id: 1, name: "Hong" };
+const lee = { id: 2, name: "Lee" };
 // f1(hong);  f2(lee); f3(hong);
 // ⇒ 1, 'Hong'
+
+const f1 = (user) => {
+  console.log(user.id, user.name);
+};
+
+const f2 = ({ id, name }) => {
+  console.log(id, name);
+};
+
+const f3 = (user) => {
+  const { id, name } = user;
+  console.log(id, name);
+};
+
+f1(hong);
+f2(lee);
+f3(hong);
